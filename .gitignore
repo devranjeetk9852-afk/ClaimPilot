@@ -1,0 +1,46 @@
+# ===== .NET =====
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.received.*
+*.verified.*
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+uv.lock.bak
+
+# ===== Node / React =====
+node_modules/
+dist/
+build/
+.vite/
+*.local
+
+# ===== Docker / infra =====
+.env
+.env.*
+!.env.example
+*.log
+
+# ===== IDE =====
+.idea/
+*.swp
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Secrets (belt and suspenders — nothing should ever be committed here) =====
+**/appsettings.Development.json
+**/secrets.json
+*.pfx
+*.pem
